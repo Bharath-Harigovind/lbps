@@ -1,0 +1,66 @@
+package calculateexample;
+import java.util.Scanner;
+public class Calculateexample
+{
+    public int Add(int a,int b)
+    {
+        int sum=a+b;
+        return sum;
+    }
+    public static void main(String[] args) 
+    {
+        Calculateexample cobj=new Calculateexample();
+        Scanner sin=new Scanner(System.in);
+        int num1,num2,result;
+        System.out.println("enter the first number");
+        num1=sin.nextInt();
+        System.out.println("enter the second number");
+        num2=sin.nextInt();
+        result=cobj.Add(num1,num2);
+        System.out.println(result);
+      }
+}
+
+----------------------------------------------------------------------------------
+package empdetailsex;
+import java.util.Scanner;
+public class Empdetailsex
+{
+    String ename;
+    String eid;
+    int age;
+    int sal;
+    int max;
+    public void edetails()
+    {
+        Scanner sin=new Scanner(System.in);
+        String n=null;
+        String id=null;
+        for(int i=0;i<2;i++)
+        {
+            System.out.println("enter the emplyoee details ");
+            ename=sin.next();
+            eid=sin.next();
+            age=sin.nextInt();
+            sal=sin.nextInt();
+            if(sal>max)
+            {
+                max=sal;
+                n=ename;
+                id=eid;
+            }
+        }
+        System.out.println(n);
+        System.out.println(id);
+        System.out.println(max);
+      }
+
+    public static void main(String[] args)
+    {
+        Empdetailsex cobj=new Empdetailsex();
+        cobj.edetails();
+    }
+    
+}
+
+----------------------------------------------------------------------------------
