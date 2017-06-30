@@ -1,0 +1,120 @@
+package accept;
+import java.util.Scanner;
+
+public class Accept 
+{
+    public static void main(String[] args) 
+    {
+        int a,b,c;
+        Scanner nee=new Scanner(System.in);
+        System.out.println("enter the first value ");
+        a=nee.nextInt();
+        System.out.println("enter the second value ");
+        b=nee.nextInt();
+        System.out.println("enter the third value ");
+        c=nee.nextInt();
+        if(a>b && a>c)
+        {
+            System.out .println("the first value is bigger");
+        }
+        else if(b>a && b>c)
+        {
+            System.out.println("the second value is bigger ");
+        }
+        else if(c>a && c>b)
+        {
+            System.out.println("the third value is bigger");
+        }
+        else
+        {
+            System.out.println("all are equal ");
+            
+        }
+      
+    }
+    
+}
+
+----------------------------------------------------------------------------------------------------------------
+
+package thirdclass;
+import java.util.Scanner;
+
+public class Thirdclass
+{
+    public static void main(String[] args)
+    {
+    String s1;
+    Scanner naa=new Scanner (System.in);
+    s1=naa.next();
+    char[] c=new char[25];
+    c=s1.toCharArray();
+    if(c[2]=='s')
+    {
+        System.out.println("the third char is S ");
+    }
+    else
+    System.out.println("the is third char is not S ");
+}
+}
+                
+-----------------------------------------------------------------------------------------------------------------
+package lastchar;
+import java.util.Scanner;
+
+public class Lastchar 
+{
+    public static void main(String[] args)
+    {
+        Lastchar ob=new Lastchar();
+        ob.fun1();
+        
+   
+    }
+    public void fun1()
+    {
+        int lastchar=0;
+        Scanner sin=new Scanner(System.in);
+        char[] str=new char[30];
+        System.out.println("enter a string");
+        str=sin.next().toCharArray();
+        lastchar=str.length-1;
+        System.out.println("the last char "+str[lastchar]);
+        
+    }
+    
+}
+
+                
+------------------------------------------------------------------------------------------------------------------
+
+package replacechar;
+import java.util.Scanner;
+
+public class Replacechar 
+{
+    public static void main(String[] args) 
+    {
+        Replacechar ob=new Replacechar();
+        ob.replace();
+        
+   
+    }
+    public void replace()
+    {
+        Scanner sin=new Scanner(System.in);
+        char[] str=new char[30];
+        int thirdchar=0;
+        System.out.println("enter a string ");
+        str=sin.next().toCharArray();
+        thirdchar=(str.length-str.length)+2;
+        str[thirdchar]='t';
+        System.out.println(str);
+        
+     
+        
+    }
+    
+}
+
+-----------------------------------------------------------------------------------------------------------------
