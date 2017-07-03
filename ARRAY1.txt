@@ -1,0 +1,40 @@
+COMPARE TWO ARRAYS WITHOUT THE PRE DEFINED FUNCTIONS. 
+
+package array;
+import java.util.Scanner;
+
+public class Array
+{
+    String s1,s2;
+    Scanner sin=new Scanner(System.in);
+    
+    public static void main(String[] args) 
+    {
+        Array obj=new Array();
+        obj.display();
+    }
+    
+    public void display()
+    {
+        System.out.println("enter the string");
+        s1=sin.next();
+        System.out.println("enter the string");
+        s2=sin.next();
+        
+        char[] c1=s1.toCharArray();
+        char[] c2=s2.toCharArray();
+       
+        for(int i=0;i<=c1.length;i++)
+        {
+            for(int j=0;j<c2.length;j++)
+            {
+                if(c1[i]==c2[j])
+                {
+                    System.out.println(c1[i]);
+                }
+            }
+                }
+            }
+        }
+        
+--------------------------------------------------------------------------------------------------------------------------------    
