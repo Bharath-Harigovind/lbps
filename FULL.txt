@@ -1,0 +1,646 @@
+WRITE A PROGRAM TO DISPLAY THE MAX NUMBER.
+
+package maxex;
+import java.util.Scanner;
+
+public class Maxex
+{
+    public static void main(String[] args) 
+    {int num,max=0;
+    Scanner sin=new Scanner(System.in);
+    int i=1;
+    while(i<=5)
+    {
+        System.out.println("enter the number ");
+        num=sin.nextInt();
+        if(num>max)
+        {
+            max=num;
+        }
+        i=i+1;
+    }
+    System.out.println("max number is "+max);
+    
+        }
+    }
+
+----------------------------------------------------------------------------------
+WRITE  A PROGRAM TO SWAP TWO NUMBERS.
+
+package swapex;
+import java.util.Scanner;
+public class Swapex 
+{
+ public static void main(String[] args) 
+    {
+        int n1,n2,temp;
+        Scanner sin=new Scanner(System.in);
+        System.out.println("enter the first number");
+        n1=sin.nextInt();
+        System.out.println("Enter the second number ");
+        n2=sin.nextInt();
+        temp=n1;
+        n1=n2;
+        n2=temp;
+        System.out.println("the first number is "+n1);
+        System.out.println("the second number is "+n2);
+    }
+       
+    }
+
+----------------------------------------------------------------------------------
+WRITE A PROGRAM TO DISPLAY THE MULTPILCATION TABLE FOR ANY NUMBER.
+
+package tableex;
+import java.util.*;
+public class Tableex 
+{
+    public static void main(String[] args) 
+    {
+        Scanner sin=new Scanner(System.in);
+        int num,i;
+        System.out.println("enter the number fo which we want the table ");
+        num=sin.nextInt();
+        for(i=1;i<=10;i++)
+        {
+         System.out.println(num*i);
+        } 
+      
+        }
+       
+    }
+    
+----------------------------------------------------------------------------------
+WRITE A PROGRAM TO ACCEPT STUDENT NAME,AGE,MARKS.IF THE PERCENTAGE IS >=50 PRINT PASS ELSE FAIL.  
+
+package myresult;
+import java.util.*;
+public class Myresult
+{
+    public static void main(String[] args)
+    {
+        String stdname;
+        int stdage;
+        int marks1,marks2,marks3,percentage;
+        Scanner sin=new Scanner(System.in);
+        System.out.println("enter the students name ");
+        stdname=sin.next();
+        System.out.println("enter the students age ");
+        stdage=sin.nextInt();
+        System.out.println("enter the first mark ");
+        marks1=sin.nextInt();
+        System.out.println("ENter the second marks ");
+        marks2=sin.nextInt();
+        System.out.println("enter the marks 3 ");
+        marks3=sin.nextInt();
+        percentage=(marks1+marks2+marks3)/3;
+        System.out.println(percentage);
+        if(percentage>=50)
+        {
+            System.out.println("PASS");
+        }
+        else
+        {
+            System.out.println("FAIL");
+            
+        }
+      
+    }
+    
+}
+
+----------------------------------------------------------------------------------
+WRITE A PROGRAM TO ADD 2 NUMBERS.
+
+package calculateexample;
+import java.util.Scanner;
+public class Calculateexample
+{
+    public int Add(int a,int b)
+    {
+        int sum=a+b;
+        return sum;
+    }
+    public static void main(String[] args) 
+    {
+        Calculateexample cobj=new Calculateexample();
+        Scanner sin=new Scanner(System.in);
+        int num1,num2,result;
+        System.out.println("enter the first number");
+        num1=sin.nextInt();
+        System.out.println("enter the second number");
+        num2=sin.nextInt();
+        result=cobj.Add(num1,num2);
+        System.out.println(result);
+      }
+}
+
+----------------------------------------------------------------------------------
+WRITE A PROGRAM TO ACCEPT EMPLYOEE DETAILS.
+
+package empdetailsex;
+import java.util.Scanner;
+public class Empdetailsex
+{
+    String ename;
+    String eid;
+    int age;
+    int sal;
+    int max;
+    public void edetails()
+    {
+        Scanner sin=new Scanner(System.in);
+        String n=null;
+        String id=null;
+        for(int i=0;i<2;i++)
+        {
+            System.out.println("enter the emplyoee details ");
+            ename=sin.next();
+            eid=sin.next();
+            age=sin.nextInt();
+            sal=sin.nextInt();
+            if(sal>max)
+            {
+                max=sal;
+                n=ename;
+                id=eid;
+            }
+        }
+        System.out.println(n);
+        System.out.println(id);
+        System.out.println(max);
+      }
+
+    public static void main(String[] args)
+    {
+        Empdetailsex cobj=new Empdetailsex();
+        cobj.edetails();
+    }
+    
+}
+
+----------------------------------------------------------------------------------
+WRITE A PROGRAM TO ACCEPT 3 VALUES AND DISPLAY WHICH IS THE HIGHEST NUMBER.
+
+package accept;
+import java.util.Scanner;
+
+public class Accept 
+{
+    public static void main(String[] args) 
+    {
+        int a,b,c;
+        Scanner nee=new Scanner(System.in);
+        System.out.println("enter the first value ");
+        a=nee.nextInt();
+        System.out.println("enter the second value ");
+        b=nee.nextInt();
+        System.out.println("enter the third value ");
+        c=nee.nextInt();
+        if(a>b && a>c)
+        {
+            System.out .println("the first value is bigger");
+        }
+        else if(b>a && b>c)
+        {
+            System.out.println("the second value is bigger ");
+        }
+        else if(c>a && c>b)
+        {
+            System.out.println("the third value is bigger");
+        }
+        else
+        {
+            System.out.println("all are equal ");
+            
+        }
+      
+    }
+    
+}
+
+----------------------------------------------------------------------------------------------------------------
+WRITE A PROGRAM TO PRINT IF THE THIRD CHARACTER OF A STRING IS 'S' OR NOT.
+
+package thirdclass;
+import java.util.Scanner;
+
+public class Thirdclass
+{
+    public static void main(String[] args)
+    {
+    String s1;
+    Scanner naa=new Scanner (System.in);
+    s1=naa.next();
+    char[] c=new char[25];
+    c=s1.toCharArray();
+    if(c[2]=='s')
+    {
+        System.out.println("the third char is S ");
+    }
+    else
+    System.out.println("the is third char is not S ");
+}
+}
+                
+-----------------------------------------------------------------------------------------------------------------
+WRITE A PROGRAM TO PRINT THE LAST CHARACTER OF A STRING
+
+package lastchar;
+import java.util.Scanner;
+
+public class Lastchar 
+{
+    public static void main(String[] args)
+    {
+        Lastchar ob=new Lastchar();
+        ob.fun1();
+        
+   
+    }
+    public void fun1()
+    {
+        int lastchar=0;
+        Scanner sin=new Scanner(System.in);
+        char[] str=new char[30];
+        System.out.println("enter a string");
+        str=sin.next().toCharArray();
+        lastchar=str.length-1;
+        System.out.println("the last char "+str[lastchar]);
+        
+    }
+    
+}
+
+                
+------------------------------------------------------------------------------------------------------------------
+WRITE A PROGRAM TO REVERSE A GIVEN CHARACTER.
+
+package replacechar;
+import java.util.Scanner;
+
+public class Replacechar 
+{
+    public static void main(String[] args) 
+    {
+        Replacechar ob=new Replacechar();
+        ob.replace();
+        
+   
+    }
+    public void replace()
+    {
+        Scanner sin=new Scanner(System.in);
+        char[] str=new char[30];
+        int thirdchar=0;
+        System.out.println("enter a string ");
+        str=sin.next().toCharArray();
+        thirdchar=(str.length-str.length)+2;
+        str[thirdchar]='t';
+        System.out.println(str);
+        
+     
+        
+    }
+    
+}
+
+-----------------------------------------------------------------------------------------------------------------
+WRITE A PROGRAM TO REVERSE A STRING.
+
+package reversestring;
+public class Reversestring
+{
+
+    public static void main(String[] args) 
+    {
+        int i;
+        String s1="reverse the number";
+        char[] r1=s1.toCharArray();
+        int l= s1.length();
+        System.out.println("length of the strig is"+l);
+        for(i=l-1;i>=0;i--)
+        {
+            System.out.print(r1[i]);
+        }
+        System.out.println("");
+        }
+        }
+    
+------------------------------------------------------------------------------------------------------------------
+WRITE A PROGRAM TO PRINT ODD OR EVEN.
+
+import java.util.Scanner;
+public class Evod {
+	public static void main(String[] args) {
+		int number;
+		Scanner eve = new Scanner(System.in);
+	 	System.out.println("enter the number");
+		n = eve.nextInt();
+		if(n%==0)
+		{
+		System.out.println("Number is even");
+		}   
+		else
+		{
+		System.out.println("Number is odd");
+		}
+	}
+}
+--------------------------------------------------------------------------------------------------------------------
+Write a program to accept 10 employee details and calculate their total bonus given to the employees.
+if salary is lessthan or equals to 10000 bonus is 30%
+if salary is lessthan or equals to 50000 bonus is 20%
+if salary is lessthan or equals to 100000 bonus is 10%
+
+
+package prjct;
+
+import java.util.Scanner;
+public class Prjct {
+     String empname;
+        int empsalary;
+        float count=0;
+        Scanner none = new Scanner(System.in);
+public void details(){
+       
+        System.out.println("enter the name");
+        empname=none.next();
+        System.out.println("enter the  " +empname+ "'s salary");
+        empsalary=none.nextInt();
+        }
+public void salary(){    
+        if(empsalary<=10000){
+        float a=(empsalary/100)*30;
+       count=count+a;
+                }
+        else if(empsalary<=50000){
+        float b=(empsalary/100)*20;
+       count=count+b;
+        }
+        else if(empsalary<=100000){
+        float c=(empsalary/100)*10;
+        count=count+c;
+        }
+    }
+public void display(){
+    System.out.println("total bonus is"+count);
+    }
+    public static void main(String[] args) {
+    Prjct obj = new Prjct();
+    for(int i=1;i<=10;i++){
+    obj.details();
+    obj.salary();
+    }
+    obj.display();
+        }
+
+      }
+-------------------------------------------------------------------------------------------------------------------
+Write a program to accept input from user and check whether the middle character of a string is t/T or not.
+
+import java.util.Scanner;
+public class JavaApplication8 {
+   
+    public static void main(String[] args) {
+       String str;
+       Scanner naa = new Scanner(System.in);
+       System.out.println("enter the string");
+       str = naa.next();
+       int a = str.length();
+       char[] r2=str.toCharArray();
+       int b=a/2;
+       System.out.println("Middle Character index is " +b);
+       if(r2[b]=='t' || r2[b]=='T')
+       {
+       System.out.println("Middle character is t");
+       }
+       else
+       {
+       System.out.println("Middle character is not t");
+       }
+    }
+    
+}
+-----------------------------------------------------------------------------------------------------------------------
+
+7.Accept 10 employee details and calculate their total bonus given to the employees.
+if salary is lessthan or equals to 10000 bonus is 30%
+if salary is lessthan or equals to 50000 bonus is 20%
+if salary is lessthan or equals to 100000 bonus is 10%
+
+import java.util.Scanner;
+public class Employ {
+     String empname;
+        int empsalary;
+        float count=0;
+        Scanner none = new Scanner(System.in);
+public void details(){
+       
+        System.out.println("enter the name");
+        empname=none.next();
+        System.out.println("enter the  " +empname+ "'s salary");
+        empsalary=none.nextInt();
+        }
+public void salary(){    
+        if(empsalary<=10000){
+        float a=(empsalary/100)*30;
+       count=count+a;
+                }
+        else if(empsalary<=50000){
+        float b=(empsalary/100)*20;
+       count=count+b;
+        }
+        else if(empsalary<=100000){
+        float c=(empsalary/100)*10;
+        count=count+c;
+        }
+    }
+public void display(){
+    System.out.println("total bonus is"+count);
+    }
+    public static void main(String[] args) {
+    Employ obj = new Employ();
+    for(int i=1;i<=10;i++){
+    obj.details();
+    obj.salary();
+    }
+    obj.display();
+        }
+
+      }
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+8.Accept movies details like movieid,moviename,actorname,directorname,yearofrelease,language,totalincome,rating(1-5),duration
+Analysis :
+total number of movies released
+total income of all movie
+total movies of rating>=4
+total movieslanguage wise
+toal movie with duration >1.5 hours
+total movies with director name "john d"
+
+import java.util.*
+public class Movie
+
+int i=1,rating,year;
+String duration,movieid,moviename,actorname,directorname,language;
+float income;
+Scanner sin=new Scanner(System.in);
+
+do{
+System.out.println("movieid");
+movieid = sin.next();
+System.out.prinln("moviename");
+moviename=sin.next();
+System.out.prinln("actorname");
+actorname=sin.next();
+System.out.prinln("director name");
+directorname=sin.next();
+System.out.prinln("year of release");
+year=sin.nextInt();
+System.out.prinln("language");
+language=sin.next();
+System.out.prinln("income");
+income=sin.nextfloat();
+System.out.prinln("rating");
+rating=sin.nextInt();
+System.out.prinln("duration");
+duration=sin.next();
+}while(i<6;)
+{
+String movieid,moviename;
+int totinc,countmovie,sumtot;
+String choice='Y';
+Scanner s=new Scanner(System.in);
+public void mvdet(){
+do{
+System.out.println("enter id");
+movieid=s.next();
+System.out.println("enter movie name");
+movieid=s.next();
+System.out.println("enter income");
+movieid=s.nextInt();
+countmovie=countmovie+1;
+sumtot=sumtot+totinc;
+System.out.println("enter your choice");
+choice=s.next();
+}while(choice=='N')
+System.out.println("total movie" +countmovie);
+System.out.println("total income" +sumtot);
+}
+public static void main(String[] args){
+s.mvdet();
+}
+}
+
+-------------------------------------------------------------------------------------------------
+9.Create four functions for addition,subtract,multiply,and divide.
+
+import java.util.*
+public class functions(){
+public void main(String[] args) {
+
+public int add(int a,int b)
+{
+int c=a+b;
+return c;
+}
+public int sub(int a,int b)
+{
+int c=a-b;
+return c;
+}
+public int mul(int a,int b)
+{
+int c=a*b;
+return c;
+}
+public int div(int a,int b)
+{
+int c=a/b;
+return c;
+}
+add(1,2);
+sub(5,8);
+mul(10,20);
+div(50,10);
+}
+}
+
+10.Accept the details from the user and display the numberof peoples in the particular city
+
+import java.util.Scanner;
+
+
+public class City {
+
+   
+    public static void main(String[] args) {
+        City obj=new City();
+        
+      obj.getdata();
+      
+       
+      
+    }
+    
+    void getdata()
+    {
+       String name;
+       String city;
+       String ans;
+       int chn=0;
+        int mum=0;
+        int bang=0;
+        int kol=0;
+        int hyd=0;
+       
+       
+       System.out.println("Do youwant enter the details type yes or no.. ");
+       Scanner sin=new Scanner(System.in);
+       ans=sin.next();
+       while("yes".equals(ans))
+       {
+           System.out.println("enter the name");
+           name=sin.next();
+           
+           System.out.println("Enter the city");
+           city=sin.next();
+          
+            switch (city) {
+            case "chennai":
+                chn=chn+1;
+                break;
+            case "mumbai":
+                mum=mum+1;
+                break;
+            case "banglore":
+                bang=bang+1;
+                break;
+            case "kolkatta":
+                kol=kol+1;
+                break;
+            case "hydrabad":
+                hyd=hyd+1;
+                break;
+            }
+ 
+            System.out.println("Do you want to continue..?");
+            ans=sin.next();
+                
+           
+           
+       }
+            System.out.println("The number of peoples belongs to chennai is "+chn);
+            System.out.println("The number of peoples belongs to mumbai is "+mum);
+            System.out.println("The number of peoples belongs to bangalore is "+bang);
+            System.out.println("The number of peoples belongs to kolkatta is "+kol);
+            System.out.println("The number of peoples belongs to hydrabad is "+hyd);
+    }
+    
+    
+}
+
+---------------------------------------------------------------------------------------------------------------------------------------
