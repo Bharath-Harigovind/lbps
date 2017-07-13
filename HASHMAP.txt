@@ -1,0 +1,44 @@
+HASH MAP?
+
+package Hashmap;
+import java.util.HashMap;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Set;
+public class Hashmap 
+{
+
+    public static void main(String[] args) 
+    {
+        HashMap<Integer,String> Custdetails=new HashMap<Integer,String>();
+        Custdetails.put(1001,"John");
+        Custdetails.put(1002,"David");
+        Custdetails.put(1003,"Vijay");
+        Custdetails.put(1004,"Tin");
+        Custdetails.put(1005,"Srini");
+        
+        Set set=Custdetails.entrySet();
+        Iterator itr=set.iterator();
+        while(itr.hasNext())
+        {
+            Map.Entry mapentry=(Map.Entry)itr.next();
+            System.out.println("Key is :"+mapentry.getKey());
+            System.out.println("Value is :"+mapentry.getValue());
+        }
+        System.out.println(Custdetails.get(1004));
+       Custdetails.remove(1002);
+       Set seta=Custdetails.entrySet();
+       Iterator itra=seta.iterator();
+  
+       
+       while(itra.hasNext())
+       {
+           Map.Entry maapentry=(Map.Entry)itr.next();
+           
+           System.out.println("Key is :"+maapentry.getKey());
+           System.out.println("Value is :"+maapentry.getValue());
+        }
+      }
+    
+}
